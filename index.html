@@ -1,77 +1,139 @@
 <!DOCTYPE html>
-</div>
-<div class="step">
-<div class="n">3</div>
-<h3>Share & deploy</h3>
-<p>Push to GitHub and turn on Pages. Share your live link with classmates and supporters.</p>
-</div>
-</div>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity: Water — Campus Landing Page</title>
+  <meta name="description" content="Join students bringing clean drinking water to communities worldwide. Learn the story, see the impact, and take action in minutes." />
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0c0f;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #2E9DF7, #0b0c0f);
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn.primary {
+      background: #FFC907;
+      color: #000;
+    }
+    .btn.secondary {
+      border: 2px solid white;
+      color: white;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .tier {
+      background: #1b1e2a;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    charity: water — Campus Project
+  </header>
 
-<section aria-label="Photos and student story">
-<div class="gallery">
-<img src="img/gallery-1.jpg" alt="Volunteers carrying yellow jerrycans" />
-<img src="img/gallery-2.jpg" alt="Close up of clean water flowing from a tap" />
-<img src="img/gallery-3.jpg" alt="Students hosting a campus fundraiser table" />
-</div>
-<div class="quote" style="margin-top:22px">
-<img src="img/student.jpg" alt="Student leader portrait" style="width:100%; border-radius:14px; aspect-ratio:4/3; object-fit:cover">
-<div>
-<blockquote>“We set a goal, rallied our campus, and funded a water project together. Knowing families will drink clean water because of our drive — that changed us too.”</blockquote>
-<cite>— Campus Ambassador, Class of 2026</cite>
-</div>
-</div>
-</section>
+  <section class="hero">
+    <h1>Bring Clean Water to Families</h1>
+    <p>Your student community can unlock life-changing impact. Sponsor a project, start a fundraiser, or give once. Every share, dollar, and step moves water closer to home.</p>
+    <a href="#donate" class="btn primary">Donate Now</a>
+    <a href="#start" class="btn secondary">Start a Campus Drive</a>
+  </section>
 
+  <section id="why">
+    <h2>Why Water?</h2>
+    <p>Clean water changes everything — health, education, and opportunity. When water is close to home, students stay in school, families thrive, and communities build their future.</p>
+  </section>
 
-<section id="faq" class="faq">
-<h2>FAQ</h2>
-<details>
-<summary>Is this the official charity: water website?</summary>
-<div class="sub">No — this is a student project inspired by charity: water for an academic assignment. Replace any placeholder copy with official language from the brand guide before publishing.</div>
-</details>
-<details>
-<summary>Where do I change colors and fonts?</summary>
-<div class="sub">At the top of this file in <code>:root</code> you’ll see CSS variables like <code>--yellow</code>, <code>--blue</code>, and <code>--bg</code>. Update those to match your Canva mockup.</div>
-</details>
-<details>
-<summary>How do I make buttons go to a real donate page?</summary>
-<div class="sub">Replace the <code>href="#donate"</code> attributes on buttons with your real donation/fundraiser URL once you have it.</div>
-</details>
-</section>
+  <section id="impact">
+    <h2>Pick an Impact Level</h2>
+    <div class="tiers">
+      <div class="tier">
+        <h3>$15</h3>
+        <p>Helps fuel a student fundraiser.</p>
+      </div>
+      <div class="tier">
+        <h3>$30</h3>
+        <p>Supports clean water solutions.</p>
+      </div>
+      <div class="tier">
+        <h3>$60</h3>
+        <p>Sponsors a team challenge.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="gallery">
+    <h2>Student Stories</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250" alt="Gallery 1">
+      <img src="https://via.placeholder.com/400x250" alt="Gallery 2">
+      <img src="https://via.placeholder.com/400x250" alt="Gallery 3">
+    </div>
+  </section>
 
-<section id="donate" aria-label="Donate">
-<div class="card">
-<h2>Ready to make waves?</h2>
-<p>Pick an amount above or choose your own on the secure donate page.</p>
-<a class="btn primary" href="#" data-cta="donate-final">Go to Donate</a>
-</div>
-</section>
-</main>
-
-
-<footer>
-<div class="wrap foot">
-<div>
-<div class="brand">
-<svg class="logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-<path fill="currentColor" d="M7 2h6l2 2h2a2 2 0 0 1 2 2v13a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Zm8.5 5.1l-6.9 6.9l1.4 1.4l6.9-6.9l-1.4-1.4Z" style="color: var(--yellow)"></path>
-</svg>
-<span>charity: water <span class="tag">Campus</span></span>
-</div>
-<small>Class demo. Not the official charity: water website. Replace placeholders with approved copy before publishing.</small>
-</div>
-<div style="text-align:right">
-<small>Built with HTML & CSS • Deployed on GitHub Pages</small>
-</div>
-</div>
-</footer>
-
-
-<div class="sticky-donate" aria-hidden="false">
-<a class="btn primary" href="#donate" data-cta="sticky-mobile">Donate</a>
-</div>
+  <footer>
+    <p>© 2025 Campus charity: water Project — Built for class demo</p>
+  </footer>
 </body>
 </html>
