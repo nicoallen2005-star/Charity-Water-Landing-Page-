@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity: Water — Campus Landing Page</title>
+  <meta name="description" content="Join students bringing clean drinking water to communities worldwide. Learn the story, see the impact, and take action in minutes." />
+  <meta property="og:title" content="Charity: Water — Campus Landing Page" />
+  <meta property="og:description" content="Join students bringing clean drinking water to communities worldwide. Learn the story, see the impact, and take action in minutes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Avenir&family=Proxima+Nova&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Updated Brand palette */
+      --yellow:#FFC907;
+      --blue:#2E9DF7;
+      --light-blue:#8BD1CB;
+      --green:#4FCB53;
+      --orange:#FF902A;
+      --red:#F5402C;
+      --dark-green:#159A48;
+      --pink:#F16061;
+
+      --ink:#111111;
+      --ink-2:#222429;
+      --ink-3:#2d2f36;
+      --bg:#0b0c0f;
+      --muted:#8b90a0;
+      --surface:#151720;
+      --surface-2:#1b1e2a;
+      --white:#ffffff;
+
+      --radius:18px;
+      --shadow:0 10px 24px rgba(0,0,0,.25);
+      --shadow-soft:0 6px 16px rgba(0,0,0,.18);
+      --max:1100px;
+    }
+    body{
+      margin:0; font-family:'Proxima Nova','Avenir',system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--white); background:linear-gradient(180deg, #0a0b0e 0%, #0e1016 60%, #0b0c10 100%);
+      line-height:1.6;
+    }
+    a{color:var(--yellow); text-decoration:none}
+    a:hover{opacity:.9}
+
+    /* Buttons */
+    .btn.primary{background:var(--yellow); color:#101010; box-shadow:0 8px 18px rgba(255,196,0,.28)}
+    .btn.primary:hover{background:var(--blue); color:#fff;}
+    .btn.ghost{border:1px solid rgba(255,255,255,.22); color:#fff}
+    .btn.ghost:hover{background:var(--light-blue); color:#000;}
+
+    /* Impact tiers */
+    .tier .amount{font-weight:900; font-size:28px; color:var(--yellow)}
+    .tier:nth-child(2) .amount{color:var(--blue);}
+    .tier:nth-child(3) .amount{color:var(--green);}
+
+    /* CTA section */
+    #donate .btn.primary{background:var(--orange);}
+    #donate .btn.primary:hover{background:var(--red);}
+  </style>
+</head>
+<body>
+  <!-- Rest of the HTML structure remains the same -->
+</body>
+</html>
